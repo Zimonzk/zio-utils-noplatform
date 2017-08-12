@@ -1,10 +1,10 @@
 WORKDIR = %cd%
 
-CC = gcc.exe
-CXX = g++.exe
-AR = ar.exe
-LD = g++.exe
-WINDRES = windres.exe
+CC = gcc
+CXX = g++
+AR = ar
+LD = g++
+WINDRES = windres
 
 INC = 
 CFLAGS = 
