@@ -52,8 +52,8 @@ $(OBJDIR_RELEASE)/list.o: $(SRC_RELEASE)/list.c
 	$(CC) $(CFLAGS_RELEASE) $(INC_RELEASE) -c $(SRC_RELEASE)/list.c -o $(OBJDIR_RELEASE)/list.o
 
 clean_release: 
-	rm -r $(OBJDIR_RELEASE)
-	rm -r lib
+	rm -rf $(OBJDIR_RELEASE)
+	rm -rf lib
 
 .PHONY: before_release after_release clean_release
 
