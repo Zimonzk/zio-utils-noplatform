@@ -31,9 +31,9 @@ all: release
 
 clean: clean_release
 
-before_release: 
-	mkdir $(OBJDIR_RELEASE)
-	mkdir lib
+before_release:	
+	mkdir -p $(OBJDIR_RELEASE)
+	mkdir -p lib
 
 after_release: 
 
@@ -52,7 +52,8 @@ $(OBJDIR_RELEASE)/list.o: $(SRC_RELEASE)/list.c
 	$(CC) $(CFLAGS_RELEASE) $(INC_RELEASE) -c $(SRC_RELEASE)/list.c -o $(OBJDIR_RELEASE)/list.o
 
 clean_release: 
-	cmd /c del /f $(OBJ_RELEASE) $(OUT_RELEASE)
+	rm -r $(OBJDIR_RELEASE)
+	rm -r lib
 
 .PHONY: before_release after_release clean_release
 
