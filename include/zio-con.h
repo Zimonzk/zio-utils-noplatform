@@ -6,8 +6,6 @@
 #include <stdarg.h>
 #include <stdlib.h>
 
-#include <windows.h>
-
 #ifndef _NOMAIN_
 extern short int debug = 1;
 #endif // _NOMAIN_
